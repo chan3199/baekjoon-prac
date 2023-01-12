@@ -17,7 +17,7 @@ int main() {
     else if (A < 0 && B < 0 ){
         cout << "3";
     } 
-    else {
+    else{
         cout << "4";
     }   
 
