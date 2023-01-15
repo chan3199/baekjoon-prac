@@ -1,5 +1,4 @@
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
@@ -13,9 +12,12 @@ int main() {
 		cin >> arr[i];
 	}
     
-    sort(arr,arr+8);
-
-    Max = arr[8];
+    Max = arr[0];
+    for (int k = 0; k <= 8; k++) {
+        if (Max < arr[k]) {
+            Max = arr[k];
+        }
+    }
 
     for (int i = 0; i <= 8; i++) {
         if (arr[i] == Max) {
