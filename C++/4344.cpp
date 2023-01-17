@@ -1,48 +1,33 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
-
 int main() {
+	int c, n, num;
+	int avg;
+	int score[1000] = { 0, };
+	double result;
 
-    int n;
-    int a[1001];
+	cin >> c;
     
-    cin >> n;
+	for (int i = 0; i < c; i++) {
+		avg = 0;
+		num = 0;
+		cin >> n;
 
-    for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cin >> score[j];
+			avg = avg + score[j];
+		}
+		avg = avg / n;
+		for (int j = 0; j < n; j++) {
+			if (score[j] > avg)
+				num++;
+		}
+		result = (double)num / n * 100;
 
-        int s;
-
-        cin >> s;
-
-        int total = 0;
-        int aver = 0;
-        double n = 0;
-        
-        for (int j = 0; j < s; j++) {
-            cin >> a[i];
-            total += a[i];
-        }
-
-        aver = total/s;
-
-        for (int q = 0; q < n; q++) {
-            cout << a[q] << " ";
-        }
-
-        cout << aver << "\n";
-        
-        for (int k = 0; k < s; k++) {
-            if (a[k] > aver) {
-                n++;
-            }
-        }
-        
-        cout.precision(3);
-        cout << n/s*100 << "%" <<"\n";
-    }
-
-    return 0;
+		cout << fixed;
+		cout.precision(3);
+		cout << result << "%" << endl;
+	}
 }
