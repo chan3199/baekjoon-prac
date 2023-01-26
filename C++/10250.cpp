@@ -17,7 +17,7 @@ int main() {
         else
             room = (N%H) * 100 + (N/H)+1;
 
-        cout << room;
+        cout << room << "\n";
     }
     return 0;
 }
