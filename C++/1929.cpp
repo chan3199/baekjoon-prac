@@ -1,5 +1,4 @@
 #include <iostream>
-#include <algorithm>
 
 using namespace std;
 
@@ -17,7 +16,6 @@ void is_prime_number(int x) {
 			}
 		}
 	}
-
 }
 
 int main() {
