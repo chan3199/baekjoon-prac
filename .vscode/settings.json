@@ -40,7 +40,10 @@
         "tuple": "cpp",
         "utility": "cpp",
         "fstream": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "cerrno": "cpp",
+        "ios": "cpp",
+        "queue": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
